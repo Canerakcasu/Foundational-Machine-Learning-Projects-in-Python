@@ -6,7 +6,7 @@ This repository contains a collection of four fundamental machine learning proje
 
 ## 📁 Project Structure
 
-.
+```
 ├── task1_linear_regression/
 │   ├── main.py
 │   └── LifeExpectancy.csv
@@ -26,9 +26,8 @@ This repository contains a collection of four fundamental machine learning proje
 └── task4_naive_bayes/
     ├── main.py
     └── (Data is loaded from sklearn)
+```
 
-
----
 
 ## 🚀 How to Run
 
@@ -38,7 +37,7 @@ Ensure you have **Python** installed.
 ### Install Dependencies
 ```bash
 pip install scikit-learn pandas numpy matplotlib
-
+```
 Run a Task
 Navigate into a specific task directory and execute the script.
 
