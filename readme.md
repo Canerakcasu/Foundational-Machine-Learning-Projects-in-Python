@@ -8,24 +8,24 @@ This repository contains a collection of four fundamental machine learning proje
 
 .
 ├── task1_linear_regression/
-│ ├── main.py
-│ └── LifeExpectancy.csv
+│   ├── main.py
+│   └── LifeExpectancy.csv
 │
 ├── task2_decision_tree/
-│ ├── main.py
-│ └── (Data is loaded from sklearn)
+│   ├── main.py
+│   └── (Data is loaded from sklearn)
 │
 ├── task3_clustering/
-│ ├── main.py
-│ ├── s1.txt
-│ ├── s2.txt
-│ ├── s3.txt
-│ ├── s4.txt
-│ └── spiral.txt
+│   ├── main.py
+│   ├── s1.txt
+│   ├── s2.txt
+│   ├── s3.txt
+│   ├── s4.txt
+│   └── spiral.txt
 │
 └── task4_naive_bayes/
-├── main.py
-└── (Data is loaded from sklearn)
+    ├── main.py
+    └── (Data is loaded from sklearn)
 
 
 ---
