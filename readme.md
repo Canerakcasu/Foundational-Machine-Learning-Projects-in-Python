@@ -48,81 +48,76 @@ python main.py
 
 
 📝 Project Summaries
-🔹 Task 1: Linear Regression - Predicting Life Expectancy
-Objective: Predict life expectancy using simple and multiple linear regression.
 
-Dataset: LifeExpectancy.csv (WHO data).
 
-Methodology:
 
-Data loading, cleaning, and splitting.
+## Task 1: Linear Regression – Predicting Life Expectancy
 
-Exploratory data analysis.
+**Objective:** Predict life expectancy using both simple and multiple linear regression.
 
-Simple Linear Regression with individual features: GDP, Total expenditure, Alcohol.
+**Dataset:** `LifeExpectancy.csv` (sourced from WHO data).
 
-Multiple Linear Regression with top 4 correlated features.
+**Methodology:**
+- Load, clean, and split the dataset.
+- Perform exploratory data analysis to identify key features.
+- Apply Simple Linear Regression using individual features (e.g., GDP, Total expenditure, Alcohol).
+- Apply Multiple Linear Regression using the top 4 most correlated features.
+- Evaluate model performance using R² and MAE metrics.
 
-Evaluation using R² and MAE.
+**Conclusion:**  
+Multiple linear regression (MAE ≈ 3.4–4.2) provides significantly better predictions than single-feature models.
 
-Conclusion:
-Multiple linear regression (MAE ≈ 3.4–4.2) significantly outperforms single-feature models.
+## Task 2: Decision Tree - Iris Flower Classification
 
-🔹 Task 2: Decision Tree - Iris Flower Classification
+**Objective:** Classify Iris species using petal and sepal measurements.
+
+**Dataset:** Iris dataset (loaded from `sklearn.datasets`).
+
+**Methodology:**
+- Train a `DecisionTreeClassifier` on the dataset.
+- Evaluate accuracy on both training and test splits.
+- Experiment with different `random_state` values and split ratios.
+- Visualize the resulting decision tree.
+
+**Conclusion:**  
+The decision tree achieves high accuracy on clean data, but may overfit the training set. Visualization helps interpret feature importance and decision boundaries.
 Objective: Classify Iris species using petal and sepal data.
 
 Dataset: Loaded from sklearn.datasets.
 
-Methodology:
+## Task 3: K-Means Clustering – Grouping Unlabeled Data
 
-Training with DecisionTreeClassifier.
+**Objective:** Apply K-Means to various 2D datasets to explore clustering performance.
 
-Evaluating accuracy on train/test splits.
+**Datasets:** `s1.txt`, `s2.txt`, `s3.txt`, `s4.txt`, `spiral.txt`.
 
-Exploring effects of random_state and split ratios.
+**Methodology:**
+- Parse and preprocess noisy and structured text data.
+- Apply K-Means clustering and visualize results.
 
-Visualizing the decision tree.
+**Analysis:**
+- ✅ Spherical clusters (`s1`, `s2`): K-Means performs very well.
+- 🔶 Noisy clusters (`s3`): Robust clustering despite noise.
+- ❌ Elongated or spiral clusters (`s4`, `spiral`): K-Means struggles with non-globular shapes.
 
-Conclusion:
-Demonstrates high performance on clean data and highlights overfitting on training set.
+**Conclusion:**  
+K-Means is effective for globular clusters but not suitable for complex or non-convex patterns.
 
-🔹 Task 3: K-Means Clustering - Grouping Unlabeled Data
-Objective: Apply K-Means on varied 2D datasets to evaluate clustering behavior.
+---
 
-Datasets: s1.txt, s2.txt, s3.txt, s4.txt, spiral.txt.
+## Task 4: Naive Bayes – Handwritten Digit Recognition
 
-Methodology:
+**Objective:** Recognize handwritten digits (0–9) using Gaussian Naive Bayes.
 
-Custom parser for noisy and structured text data.
+**Dataset:** MNIST (loaded via `fetch_openml`).
 
-K-Means applied and visualized.
+**Methodology:**
+- Load and preprocess image data.
+- Classify using `GaussianNB` (handles continuous pixel values).
+- Evaluate with accuracy, classification report, and confusion matrix.
 
-Analysis:
-
-✅ Spherical clusters (s1, s2) – excellent performance.
-
-🔶 Noisy clusters (s3) – robust clustering.
-
-❌ Elongated/spiral clusters (s4, spiral) – K-Means struggles.
-
-Conclusion:
-K-Means is ideal for globular clusters, not complex or non-convex shapes.
-
-🔹 Task 4: Naive Bayes - Handwritten Digit Recognition
-Objective: Recognize digits (0–9) using Gaussian Naive Bayes.
-
-Dataset: MNIST (loaded via fetch_openml).
-
-Methodology:
-
-Data loading and preprocessing.
-
-Classification using GaussianNB (suitable for continuous pixel values).
-
-Evaluation via accuracy, classification report, and confusion matrix.
-
-Conclusion:
-Achieves ~55% accuracy. Most confusion occurs between visually similar digits (e.g., 4 vs. 9).
+**Conclusion:**  
+Achieves around 55% accuracy. Most errors occur between visually similar digits (e.g., 4 vs. 9).
 
 📌 Summary
 This repository covers:
